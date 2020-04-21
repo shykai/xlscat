@@ -1,3 +1,5 @@
+# coding: utf-8
+
 import pandas
 import os
 import json
@@ -44,7 +46,7 @@ def sumAll():
         for filename in os.listdir(tmpDir):
             sheetName = filename.split('.')[0]
             print('SumSheet:',sheetName)
-            pCsv = pandas.read_csv('{0}/{1}'.format(tmpDir,filename), index_col=0)
+            pCsv = pandas.read_csv('{0}/{1}'.format(tmpDir,filename))
             pCsv.to_excel(writer, sheet_name=sheetName, header=False)
         
 
