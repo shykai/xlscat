@@ -1,1 +1,5 @@
-pyinstaller -D xlscat.py --hidden-import pandas --hidden-import="pandas._libs.tslibs.timedeltas" --hidden-import="pandas._libs.tslibs.np_datetime" --hidden-import="pandas._libs.tslibs.nattype" --hidden-import="pandas._libs.skiplist" --hidden-import=xlrd --hidden-import=xlwt --hidden-import=nump
+pyinstaller -D xlscat.spec
+copy release\xlsxcat\Readme.txt dist\xlscat\ /Y
+mkdir dist\xlscat\example
+type release\xlsxcat\Readme.txt
+pause
