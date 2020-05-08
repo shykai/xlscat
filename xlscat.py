@@ -8,7 +8,7 @@ import sys
 inputDir = 'example'
 tmpDir = 'tmp'
 resultFile = 'Result.xlsx'
-SkipRowMap = {'02':1, '03':3, '04':3}
+SkipRowMap = {'02':1, '03':2, '04':2}
 
 LogFile = 'log.txt'
 f = open(LogFile, 'w')
